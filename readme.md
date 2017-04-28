@@ -13,7 +13,7 @@ _заметки админа_
 1. смотрим, какие узлы доступны при помощи команды <code>pbsnodes</code>
 2. если newton или hooke свободны (<code>state = free</code>), то идём дальше; если нет, то лучше связаться с админом
 3. создаём файл <code>task.pbs</code> с описанием задачи:
-```bash
+{% highlight bash %}
 #PBS -l nodes=newton:ppn=8,walltime=150:00:00
 #PBS -N your_job_name
 #PBS -q erlang
@@ -23,7 +23,7 @@ _заметки админа_
 
 cd /path/to/executable
 OMP_NUM_THREADS=8 ./your_prog
-```
+{% endhighlight %}
 4. отправляем задачу в очередь командой <code>qsub task.pbs</code>
 5. наблюдаем за выполнением задачи при помощи <code>qstat</code>
 
