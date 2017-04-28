@@ -20,7 +20,6 @@ _заметки админа_
 #PBS -S /bin/bash
 #PBS -m abe
 #PBS -V
-
 cd /path/to/executable
 OMP_NUM_THREADS=8 ./your_prog
 ```
